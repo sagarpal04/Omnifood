@@ -26,3 +26,22 @@ document.querySelectorAll(".alternate-link").forEach((link) => {
 
 const copyDate = document.querySelector(".newDate");
 copyDate.textContent = new Date().getFullYear();
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionElement = document.querySelector(href);
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
