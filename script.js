@@ -38,10 +38,11 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
-    }
-    if (href !== "#" && href.startsWith("#")) {
+    } else if (href.startsWith("#")) {
       const sectionElement = document.querySelector(href);
-      sectionElement.scrollIntoView({ behavior: "smooth" });
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: "smooth" });
+      }
     }
   });
 });
