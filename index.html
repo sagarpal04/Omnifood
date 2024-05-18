@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="mediaquery.css" />
     <script src="script.js" defer></script>
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+      defer
+    ></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -25,11 +29,11 @@
       <a href="#"><img src="img/omnifood-logo.png" class="logo" alt="" /></a>
       <nav>
         <ul class="main-nav">
-          <li><a href="#" class="main-nav-links">How it works</a></li>
-          <li><a href="#" class="main-nav-links">Meals</a></li>
-          <li><a href="#" class="main-nav-links">Testimonials</a></li>
-          <li><a href="#" class="main-nav-links">Pricing</a></li>
-          <li><a href="#" class="main-nav-links try">Try for free</a></li>
+          <li><a href="#how" class="main-nav-links">How it works</a></li>
+          <li><a href="#meals" class="main-nav-links">Meals</a></li>
+          <li><a href="#testimonal" class="main-nav-links">Testimonials</a></li>
+          <li><a href="#price" class="main-nav-links">Pricing</a></li>
+          <li><a href="#form" class="main-nav-links try">Try for free</a></li>
         </ul>
       </nav>
       <ion-icon name="menu-outline" class="menu menu-open hidden"></ion-icon>
@@ -51,10 +55,10 @@
               nutritional needs.
             </p>
             <div class="hero-btn-box">
-              <a href="#" class="btn btn-left margin-right-small"
+              <a href="#form" class="btn btn-left margin-right-small"
                 >Start eating well</a
               >
-              <a href="#" class="btn btn-right">Learn more &darr;</a>
+              <a href="#how" class="btn btn-right">Learn more &darr;</a>
             </div>
             <div class="delivered-customer">
               <div class="delivered-customer-img">
@@ -178,7 +182,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-it">
           <span class="subheading"> Meals </span>
           <h2 class="heading-secondary">
@@ -312,7 +316,7 @@
           <a href="#" class="see-all">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonial">
+      <section class="section-testimonial" id="testimonal">
         <div class="testimonial-text">
           <span class="subheading">Testimonials </span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -390,7 +394,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="price">
         <div class="container pricing-section">
           <span class="subheading">PRICING </span>
           <h2 class="heading-secondary">
@@ -519,7 +523,7 @@
           </div>
         </div>
       </section>
-      <section class="container section-form-input">
+      <section class="container section-form-input" id="form">
         <div class="section-form">
           <div class="cta-box">
             <h2 class="heading-secondary cta-heading">
