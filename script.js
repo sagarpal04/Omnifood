@@ -33,16 +33,9 @@ allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
-    if (href === "#") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    } else if (href.startsWith("#")) {
+    if (href.startsWith("#")) {
       const sectionElement = document.querySelector(href);
-      if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: "smooth" });
-      }
+      sectionElement.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
