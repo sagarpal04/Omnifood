@@ -233,3 +233,15 @@ body.sticky .main {
 .section-hero {
   margin-top: 0; /* Ensure no margin here to avoid conflicts */
 }
+.newbutton {
+  font-family: inherit;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 9px;
+  font-weight: 500;
+  height: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
