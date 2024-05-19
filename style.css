@@ -209,3 +209,27 @@ header {
 .alternate-link {
   font-size: 4rem !important;
 }
+body.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 11rem; /* Ensure this height matches the space used by the header when not sticky */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 5;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transition: top 1s ease; /* Smooth transition to avoid shaking */
+}
+
+body.sticky .main {
+  margin-top: 11rem; /* Adjust based on header height */
+}
+
+.header {
+  height: 11rem; /* Ensure this height matches the sticky state */
+  transition: top 0.3s ease-in-out; /* Smooth transition to avoid shaking */
+}
+
+.section-hero {
+  margin-top: 0; /* Ensure no margin here to avoid conflicts */
+}
