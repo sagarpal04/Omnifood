@@ -594,6 +594,9 @@
   .menu-open {
     display: block;
   }
+  .newbutton {
+    height: 3.1rem;
+  }
 }
 @media (max-width: 24em) {
   html {
