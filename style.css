@@ -227,7 +227,7 @@ body.sticky .main {
 
 .header {
   height: 11rem; /* Ensure this height matches the sticky state */
-  transition: top 0.3s ease-in-out; /* Smooth transition to avoid shaking */
+  transition: top 1s ease; /* Smooth transition to avoid shaking */
 }
 
 .section-hero {

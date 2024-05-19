@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,12 +21,13 @@
     <link rel="stylesheet" href="section-pricing.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="icon" href="img/favicon.png " />
     <script src="script.js" defer></script>
     <script
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
       defer
     ></script>
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header id="header " class="header">
@@ -546,6 +551,7 @@
                   id="full-name"
                   placeholder="John Smith"
                   class="cta-input"
+                  required
                 />
               </div>
               <div>
@@ -555,13 +561,14 @@
                   id="email"
                   placeholder="me@example.com"
                   class="cta-input"
+                  required
                 />
               </div>
               <div>
                 <label for="select-where" class="cta-label"
                   >Where did you hear from us?</label
                 >
-                <select id="select-where" class="cta-input">
+                <select id="select-where" class="cta-input" required>
                   <option value="">Please choose one option:</option>
                   <option value="friends">Friends and family</option>
                   <option value="youtube">Youtube video</option>
